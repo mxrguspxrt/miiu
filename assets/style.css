@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #333;
+  padding: 40px;
+}
+
+.title {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.subtitle {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+
+.images {
+  text-align: center;
+}
+
+.drawinds {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.contacts {
+  padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 1200px) {
+
+  body {
+    overflow: hidden;
+  }
+
+  .contacts {
+    width: 30%;
+    min-width: 400px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .works {
+    width: 60%;
+    min-width: 400px;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .contacts, .works {
+    margin-bottom: 40px;
+  }
+
+  .works {
+    position: relative;
+    height: 100%;
+  }
+
+  .works .scrollable {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 0;
+    margin-right: 40px;
+  }
+
+}
